@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product2={
+            name:'shirt',
+            ['delivery-time']:'1 day',//now it will work
+            rating:{
+                stars:4.5,
+                count:87,
+            },
+            fun:function function1(){
+                console.log('function inside the object');//function is another type of object
+            }
+
+        }
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        // console.log(product2.delivery-time);//this will give an array javascript thinks dash sign is minus and it is math 
+        //bracket notation let us useproperties that we don't access with dot notation
+        console.log(product2['delivery-time']);//now it will work
+
+        console.log(product2.rating.count);
+        product2.fun();
+
+        console.log(typeof console);//console is just an object
+        console.log(typeof console.log());//console.log() is a function 
+        console.log(typeof Math);
+        console.log(typeof Math.random());//method Math is object and Math.random is a function 
+
+
+
+        //////// JSON ///////////
+        // Javascript object Notation
+        // a syntax similar jo javascript object has less feature
+        // {
+        //     "name":"shirt",
+        //     "delivery-time":"1 day",
+        //     "rating":{
+        //         "stars":4.5,
+        //         "count":87,
+        //     }
+        // }
+        // JSON does not support sing quotes 
+        // JSON does not support functions 
+        // JSON synax is understand by almost all kind of programming langague 
+        // while javascript object syntax is only understand by object
+        // So JSON is universal
+        // we use JSON to send data between different computer and use to store data 
+        // Built-in JSON helps us to convert javascript object into JSON
+        let JSONString=JSON.stringify(product2);
+        console.log(typeof(JSON.stringify(product2))) ;//to convert javascript object into a JSON form 
+        console.log(JSON.parse(JSONString));
+
+
+        //local storage is used to store values more permanently
+        
+    </script>
+</body>
+</html>

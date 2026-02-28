@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <button onclick="console.log(`Cart Quantity : ${Quantity}`);">Show Quantity</button>
+    <button onclick="Quantity=Quantity+1;console.log(`Cart Quantity:${Quantity}`)">Add to Cart</button>
+    <button onclick="Quantity=Quantity+2;console.log(`Cart Quantity:${Quantity}`)">+2</button>
+    <button onclick="Quantity=Quantity+3; console.log(`Cart Quantity:${Quantity}`)">+3</button>
+    <button onclick="Quantity+=4; console.log(`Cart Quantity:${Quantity}`)">+4</button>
+    <button onclick="Quantity+=5; console.log(`Cart Quantity:${Quantity}`)">+5</button>
+    <button onclick="Quantity--; console.log(`Cart Quantity:${Quantity}`)" >Remove from cart</button>
+    <button onclick="Quantity-=2; console.log(`Cart Quantity:${Quantity}`)">-2</button>
+    <button onclick="Quantity-=3 ; console.log(`Cart Quantity:${Quantity}`)">-3</button>
+    <button onclick="Quantity=0;console.log('cart was reset');console.log(`Cart Quantity:${Quantity}`)">Reset Cart</button>
+    <script>
+        let Quantity=0;
+        // +=2;
+        // -=2;
+        // *=2;
+        // /=2;
+        // ++
+        // --
+        //Naming convention camel case is used in javascript ...cartQuantity first word is small and second word is capital camelCase
+        // kebab-case cart-quantity this does not work in JS
+        // CartQuantity PascalCase
+
+        // 2:23 
+    </script>
+</body>
+</html>

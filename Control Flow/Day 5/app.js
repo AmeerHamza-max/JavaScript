@@ -51,5 +51,29 @@ switch(x){
         break;
     default:
         bulb="no value found";
+        console.log(bulb);
 }
-// 2:11
+let day='monday';
+switch(day){
+    case 'monday':
+        console.log('Today is monday');
+        break;
+    case 'tuesday':
+        console.log("Today is tuesday");
+        break;
+    case 'wednesday':
+        console.log('Today is wednesday');
+        break;
+    case 'tuesday':
+        console.log('Today is tuesday');
+        break;
+    case 'saturday':
+        console.log("Today is saturday");
+        break;
+    case 'sunday':
+        console.log("Today is sunday");
+        break;
+    default:
+        console.log("Don't know what day is today"); 
+
+}

@@ -35,3 +35,28 @@ const myLetter=['h','e','l','l','o'];
 console.log(myLetter);
 
 
+const fruits1=["apples",'mango','strawberries','pineapple','grapes'];
+console.log(fruits1.length);
+console.log(fruits1);
+fruits1.push('Banana');
+console.log(fruits1);
+console.log(fruits1.length);
+fruits1.pop();
+console.log(fruits);
+console.log(fruits1.length);
+
+fruits1.shift();
+console.log(fruits1);
+console.log(fruits1.length);
+
+
+fruits1.unshift('apples');
+console.log(fruits1); 
+console.log(fruits1.length); 
+
+
+const fruits2=['Chocklawa','Gawa','Tomato'];
+
+const totalFruits=fruits1.concat(fruits2);
+console.log(totalFruits);
+

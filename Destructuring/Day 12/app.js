@@ -87,4 +87,84 @@ printPersonInfo(person2);
  }
 
  showMenu(options)
- //6:02
+ 
+//Nested destructuring
+const songs=[
+    {name:"Lucky You",singer:"Joyner",duration:4.34},
+    {name:"Just like you",singer:"NF",duration:3.23},
+    {name:"Humble singer",singer:"Kendrick Lamar",duration:2.33},
+    {name:"Old Town Road",singer:"Lil Nas X",duration:1.43},
+    {name:"Cold Sholder",singer:"Central Cee",duration:5.23},
+];
+// const [,,{singer}]=songs;
+const [,,{singer:s}]=songs;
+console.log(s);
+
+
+const data = {
+  user: {
+    id: 101,
+    name1: "Zeeshan Khan",
+    age1: 28,
+    email: "zeeshan@example.com",
+    address: {
+      city: "Karachi",
+      country1: "Pakistan"
+    }
+  },
+  hobbies: ["Cricket", "Gaming", "Coding"],
+  score: {
+    maths: 85,
+    science: 90,
+    history: 78
+  },
+  products: {
+    id: "P-500",
+    name: "Wireless Mouse",
+    price: 1500
+  },
+  settings: {
+    darkmode: true,
+    notifications: {
+      email: true,
+      sms: false,
+      push: true
+    }
+  },
+  language: "Urdu"
+};
+
+
+const {
+    user:{
+        name1,age1,address:{city,country1}, email,
+    },
+    hobbies,
+    score:{maths:math,science,history},
+        
+    products,
+    settings:{
+        darkmode,
+        notifications:{
+            email:emailNotification,
+            sms:smsNotification,
+            push:pushNotification
+        }
+        
+    },
+    language
+}=data;
+
+
+
+ console.log(`Name: ${name1}`)
+ console.log(`Age: ${age1}`)
+ console.log(`Address: ${city}, ${country1}`)
+ console.log(`Hobbies: ${hobbies.join(" ,")}`)
+ console.log(`Science Score: ${science}`)
+ console.log(`Math Score: ${math}`)
+ console.log(`History Score: ${history}`)
+ console.log(`Product 1:${products.name} - ${products.price}`);
+  console.log(`Email Notification: ${emailNotification}`);
+ console.log(`SMS Notification: ${pushNotification}`);
+console.log(`Language: ${language}`);

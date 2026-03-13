@@ -53,4 +53,5 @@ for(const ex of array1){
     console.log(ex);
 }
 
-// 6:24
+
+

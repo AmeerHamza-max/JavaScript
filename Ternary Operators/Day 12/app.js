@@ -41,5 +41,3 @@ console.log(isAdult);
 let money="500";
 const person=money!=""?"Buy Products":"They should bring money";
 console.log(person);
-
-let 

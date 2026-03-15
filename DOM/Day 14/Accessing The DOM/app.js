@@ -28,5 +28,5 @@ console.log(document.querySelectorAll('.cls'));
 console.log(document.querySelectorAll("li"));
 console.log(document.querySelectorAll("li").length );
 
-// 8:10
+
 

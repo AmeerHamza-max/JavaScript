@@ -281,4 +281,3 @@ console.log(product);
 // -> iteration: Map provides built-in methods for easy
 // iteration over its elements.
 
-// 7:21 

@@ -108,3 +108,5 @@ const animal1=new Animal("Frog");
 
 console.log(animal1);
 console.log(dog1.bark());
+
+
